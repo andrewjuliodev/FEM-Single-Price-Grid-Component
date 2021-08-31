@@ -28,16 +28,39 @@ button {
   text-decoration: none;
 }
 /* STYLE */
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .card {
   height: 480px;
   width: 640px;
   display: grid;
-
+  grid-template-columns: 320px 320px;
+  grid-template-rows: 240px 240px;
   grid-template-areas:
     "top top"
     "bottomL bottomR";
 }
 
-.bottomLeft {
-  grid-area: "bottomL";
+.top,
+.bottomLeft,
+.bottomRight {
+  height: 240px;
+  width: 640px;
+}
+.top {
+  grid-area: top;
+  grid-row: span;
+}
+
+.bottomR {
+  grid-area: bottomR;
+}
+.bottomL {
+  grid-area: bottomL;
 }
