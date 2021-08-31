@@ -16,9 +16,10 @@
   font-size: 16px;
 }
 
+/* WIREFRAME 
 .frame {
   border: 1px solid red;
-}
+}*/
 
 /* STYLE */
 body {
@@ -35,7 +36,7 @@ body {
   width: 640px;
   display: grid;
   grid-template-columns: 320px 320px;
-  grid-template-rows: 240px 240px;
+  grid-template-rows: 225px 265px;
   grid-template-areas:
     "top top"
     "bottomL bottomR";
@@ -45,9 +46,10 @@ body {
 .top,
 .bottomLeft,
 .bottomRight {
-  height: 240px;
+  height: 265px;
   width: 640px;
 }
+
 .top {
   grid-area: top;
   grid-row: span;
@@ -64,7 +66,7 @@ body {
 .bottomR {
   grid-area: bottomR;
   border-radius: 0 0 10px 0;
-  background-color: hsla(179, 62%, 43%, 60%);
+  background-color: hsla(179, 62%, 43%, 75%);
 }
 
 .bottomL,
@@ -79,9 +81,69 @@ a:link {
 
 button {
   text-decoration: none;
-  width: 200px;
+  width: 240px;
   height: 40px;
   background-color: hsl(71, 73%, 54%);
   border: none;
   border-radius: 7px;
+  margin-top: 30px;
+}
+
+p,
+button {
+  margin-left: 40px;
+}
+
+.join,
+.monthly,
+.why {
+  margin: 45px 0 25px 40px;
+}
+
+.bottom {
+  font-weight: 700;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+}
+
+.dollars {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.month {
+  color: hsla(204, 43%, 93%, 70%);
+  margin: 7px 0 0 8px;
+}
+
+.onedollar {
+  margin-top: 10px;
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+}
+
+.reasons {
+  font-size: 12px;
+  line-height: 18px;
+  color: hsl(204, 43%, 93%);
+}
+
+.join {
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.guarantee {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.access {
+  color: hsl(218, 22%, 67%);
+  margin-top: 12px;
 }
