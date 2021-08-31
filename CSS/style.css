@@ -20,13 +20,6 @@
   border: 1px solid red;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-button {
-  text-decoration: none;
-}
 /* STYLE */
 body {
   position: absolute;
@@ -34,6 +27,7 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background: hsl(204, 43%, 93%);
 }
 
 .card {
@@ -45,6 +39,7 @@ body {
   grid-template-areas:
     "top top"
     "bottomL bottomR";
+  border-radius: 10px;
 }
 
 .top,
@@ -56,11 +51,37 @@ body {
 .top {
   grid-area: top;
   grid-row: span;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+}
+
+.bottomL {
+  grid-area: bottomL;
+  border-radius: 0 0 0 10px;
+  background-color: hsl(179, 62%, 43%);
 }
 
 .bottomR {
   grid-area: bottomR;
+  border-radius: 0 0 10px 0;
+  background-color: hsla(179, 62%, 43%, 60%);
 }
-.bottomL {
-  grid-area: bottomL;
+
+.bottomL,
+.bottomR {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  text-decoration: none;
+  width: 200px;
+  height: 40px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 7px;
 }
